@@ -2,12 +2,12 @@
 
 ## Pushing to GitHub
 
-The project is initialized as a Git repo with an initial commit on `main`. The remote `origin` may point to a placeholder URL. Point it at your actual GitHub repo and push:
+The project is initialized as a Git repo with an initial commit on `master`. The remote `origin` may point to a placeholder URL. Point it at your actual GitHub repo and push:
 
 ```bash
 git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME_OR_ORG/nf-site-dashboard.git
 # or SSH: git remote set-url origin git@github.com:YOUR_GITHUB_USERNAME_OR_ORG/nf-site-dashboard.git
-git push -u origin main
+git push -u origin master
 ```
 
 Replace `YOUR_GITHUB_USERNAME_OR_ORG` with your GitHub username or organization. Ensure the repo `nf-site-dashboard` exists on GitHub first.

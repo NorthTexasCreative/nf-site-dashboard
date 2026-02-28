@@ -1,0 +1,38 @@
+@import '../../../../vendor/filament/filament/dist/theme.css';
+
+/*
+ * Phase 2 UI tweaks (best-effort):
+ * - Sticky table header
+ * - Sticky / frozen "Environment Name" column
+ *
+ * NOTE: This file must include a full Filament theme build (Tailwind + preset),
+ * not just overrides, otherwise Filament styles will be missing.
+ */
+
+/* Sticky header row while scrolling page */
+.fi-ta thead th {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+/* Frozen first column (Environment Name) */
+.fi-ta .fi-table-header-cell-name,
+.fi-ta .fi-table-cell-name,
+.fi-ta .nf-sticky-first-col {
+    position: sticky;
+    left: 0;
+    z-index: 30;
+    background: rgb(255 255 255);
+}
+
+.dark .fi-ta .fi-table-header-cell-name,
+.dark .fi-ta .fi-table-cell-name,
+.dark .fi-ta .nf-sticky-first-col {
+    background: rgb(17 24 39);
+}
+
+.fi-ta .fi-table-header-cell-name {
+    z-index: 40;
+}
+

@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+      "command": "wsl.exe",
+      "args": [
+        "ddev",
+        "artisan",
+        "boost:mcp"
+            ],
+            "cwd": "/home/carla/projects/nf-site-dashboard"
+         }
+    }
+}

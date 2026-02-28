@@ -1,0 +1,19 @@
+---
+description: Prevent commits/pushes/PRs unless explicitly requested by user
+alwaysApply: true
+---
+
+# Git safety: explicit user request required
+
+- Do **not** run any of the following unless the user **explicitly asks**:
+  - `git commit` (including `--amend`)
+  - `git push` (any flags)
+  - any PR creation flow (e.g. `gh pr create`, `gh pr merge`, etc.)
+
+- If the user requests code changes but does not explicitly request a commit/push/PR:
+  - Make the changes locally only.
+  - Stop before any commit/push/PR step and ask for explicit permission.
+
+- If the user explicitly requests a commit/push/PR:
+  - Follow the repo’s git safety protocol and avoid destructive commands unless explicitly requested.
+
